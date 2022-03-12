@@ -8,12 +8,12 @@
 int main(void)
 {
 int i = 48;
+int j = 97;
 while (i <= 57)
 {
 putchar(i);
 i++;
 }
-int j = 97;
 while (j <= 102)
 {
 putchar(j);
