@@ -11,7 +11,7 @@ ch = 97;
 while (ch <= 122)
 {
 _putchar(ch);
-i++;
+ch++;
 }
 _putchar('\n');
 }
