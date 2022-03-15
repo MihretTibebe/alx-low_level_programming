@@ -12,7 +12,6 @@ for (i = 97; i <= 122; i++)
 if (c == i)
 return (1);
 }
-int i;
 for (i = 65; i <= 90; i++)
 {
 if (c == i)
