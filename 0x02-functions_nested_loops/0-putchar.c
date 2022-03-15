@@ -1,4 +1,3 @@
-//#include <stdio.h>
 #include <unistd.h>
 #include "main.h"
 /**
@@ -15,6 +14,5 @@ for (i = 0; i < 8; i++)
 {
 _putchar(ch[i]);
 }
-	
-	return (0);
+return (0);
 }
