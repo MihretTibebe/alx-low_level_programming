@@ -14,7 +14,7 @@ if (n == 98)
 break;
 printf(", ");
 n++;
-printf(" ");
+printf("\n");
 }
 }
 
