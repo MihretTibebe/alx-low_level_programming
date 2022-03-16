@@ -20,12 +20,12 @@ _putchar('0' + r);
 }
 else if (r < 10)
 {
-_putchar('   ');
+_putchar(10 + 10 + 10);
 _putchar('0' + r);
 }
 else if (r < 100)
 {
-_putchar('  ');
+_putchar(10 + 10);
 _putchar('0' + r / 10);
 _putchar('0' + r % 10);
 }
