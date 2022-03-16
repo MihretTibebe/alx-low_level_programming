@@ -30,7 +30,7 @@ if (r < 10)
 _putchar(' ');
 j++;
 }
-putchar('\n');
+_putchar('\n');
 i++;
 }
 }
