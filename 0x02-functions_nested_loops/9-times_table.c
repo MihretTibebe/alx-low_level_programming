@@ -14,10 +14,7 @@ while (j <= 9)
 {
 r = i * j;
 if (r < 10)
-{
 _putchar('0' + r);
-_putchar(' ');
-}
 else
 {
 _putchar('0' + r / 10);
@@ -26,6 +23,7 @@ _putchar('0' + r % 10);
 if (j == 9)
 break;	
 _putchar(',');
+if (r < 10)
 _putchar(' ');
 j++;
 }
