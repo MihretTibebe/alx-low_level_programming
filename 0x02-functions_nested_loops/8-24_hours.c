@@ -18,7 +18,7 @@ _putchar(':');
 _putchar('0' + m / 10);
 _putchar('0' + m % 10);
 _putchar(10);
-}	
-}	
+}
+}
 }
 
