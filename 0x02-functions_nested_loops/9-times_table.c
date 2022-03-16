@@ -33,7 +33,7 @@ if (j == 9)
 break;
 _putchar(',');
 _putchar(' ');
-if (i == 0 && j == 0)
+if (i == 0)
 _putchar(' ');
 j++;
 }
