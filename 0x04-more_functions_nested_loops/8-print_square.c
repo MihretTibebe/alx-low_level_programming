@@ -14,7 +14,9 @@ while (i < size)
 for (j = 0; j < size; j++)
 {
 _putchar('#');
+j++;
 }
 _putchar('\n');
 }
+_putchar('\n');
 }
