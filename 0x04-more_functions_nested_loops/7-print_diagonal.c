@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_diagonal - check for a digit
@@ -7,7 +7,7 @@
  */
 void print_diagonal(int n)
 {
-it i = 0, ii;
+int i = 0, ii;
 while (i < n && n > 0)
 {
 ii = 0;
