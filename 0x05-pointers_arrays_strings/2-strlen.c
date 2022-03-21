@@ -13,6 +13,6 @@ while (s[i])
 {
 	i++;
 }
-return (len);
+return (i);
 }
 
