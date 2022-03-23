@@ -16,13 +16,12 @@ while (dest[i])
 {
 i++;
 }
-while (src[j] != '\0')
-{
-i++;
+do {
 dest[i] = dest[i] + src[j];
+i++;
 j++;
 }
-i++;
+while (src[j] != '\0');
 dest[i] = dest[i] + '\0';
 return (dest);
 }
