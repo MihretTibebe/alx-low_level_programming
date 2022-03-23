@@ -10,7 +10,6 @@
 
 char *_strcat(char *dest, char *src)
 {
-char *ptr;
 int i, j;
 while (dest[i])
 {
@@ -24,5 +23,5 @@ j++;
 }
 i++;
 dest[i] = dest[i] + '\0';
-return (*ptr);
+return (dest);
 }
