@@ -20,8 +20,6 @@ do {
 dest[i] = dest[i] + src[j];
 i++;
 j++;
-}
-while (src[j] != '\0');
-dest[i] = dest[i] + '\0';
+} while (src[j] != '\0');
 return (dest);
 }
