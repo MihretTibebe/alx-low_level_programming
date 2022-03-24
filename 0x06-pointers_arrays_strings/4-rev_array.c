@@ -16,9 +16,8 @@ int temp;
 	{
 		temp = a[i];
 		a[i] = a[n - 1];
-		a[n -1] = temp;
+		a[n - 1] = temp;
 		n--;
-		
 	}
 
 }
