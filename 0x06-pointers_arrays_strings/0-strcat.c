@@ -16,7 +16,7 @@ while (dest[i])
 {
 i++;
 }
-do {
+do{
 dest[i] = dest[i] + src[j];
 i++;
 j++;
