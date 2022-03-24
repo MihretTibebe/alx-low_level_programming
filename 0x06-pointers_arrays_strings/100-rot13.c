@@ -17,7 +17,7 @@ char *rot13(char *s)
 		{
 			if (((s[i] <= 'z' && s[i] >= 'a') || (s[i] <= 'Z' && s[i] >= 'A'))
 		&& s[i] == in[j])
-			s[i] = out[j]
+			s[i] = out[j];
 		}
 	}
 }
