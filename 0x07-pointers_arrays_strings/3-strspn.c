@@ -4,12 +4,13 @@
  *
  * @s : string to be searched
  * @accept : accept string
- * @return int
+ * Return: int
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, count = 0;;
+	int i, j;
+	int count = 0;
 
 	for (i = 0; s[i] != ' '; i++)
 	{
