@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  *_strpbrk - gets the length of a prefix substring
  *
@@ -10,7 +11,6 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
-	int count = 0;
 	char *r;
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -24,4 +24,5 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
+	return (NULL);
 }
