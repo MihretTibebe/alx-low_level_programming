@@ -32,6 +32,6 @@ int prime(int n, int v)
 			prime(n, v + 1);
 		}
 	}
-	else
-		return (1);
+
+	return (1);
 }
