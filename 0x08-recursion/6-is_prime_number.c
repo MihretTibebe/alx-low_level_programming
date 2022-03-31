@@ -32,6 +32,17 @@ int prime(int n, int v)
 			prime(n, v + 1);
 		}
 	}
+	else if (v > n)
+		{
+		if (n % v == 0)
+		{
+		return (0);
+		}
+		else
+		{
+			prime(n, v - 1);
+		}
+		}
 
 	return (1);
 }
