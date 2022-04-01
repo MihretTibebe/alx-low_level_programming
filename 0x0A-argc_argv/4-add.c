@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	if (isInt(argv))
+	if (isInt(argv[argc]))
 	{
 		printf("Error\n");
 		return (1);
