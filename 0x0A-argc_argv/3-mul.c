@@ -9,7 +9,6 @@
 
 int main(int argc, char *argv[])
 {
-	(void)argc;
 	int mul;
 
 	if (argc == 3)
