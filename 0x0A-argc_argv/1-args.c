@@ -1,17 +1,16 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - start point
- * @argc : int
- * @argv : char
+ * main - prints the number of arguments passed into the program
+ * @argc: int
+ * @argv: list
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
-	if (argv != NULL)
-		printf("%d\n", argc);
-
-	return (0);
+(void)argv;
+printf("%i\n", argc - 1);
+return (0);
 }
+
