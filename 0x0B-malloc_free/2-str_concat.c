@@ -28,8 +28,6 @@ char *str_concat(char *s1, char *s2)
 	if (ch == NULL)
 		return (NULL);
 
-	if (s1 != NULL && s2 != NULL)
-	{
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		ch[i] = s1[i];
@@ -39,21 +37,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		ch[i + j] = s2[j];
 	}
-	}
-
-	else if (s1 == NULL)
-	{
-		for (j = 0; s2[j] != '\0'; j++)
-		{
-			ch[j] = s2[j];
-		}
-	}
-	else
-	{
-		for (i = 0; s1[i] != '\0'; i++)
-		{
-			ch[i] = s1[i];
-		}
-	}
-	return (ch);
+return (ch);
 }
