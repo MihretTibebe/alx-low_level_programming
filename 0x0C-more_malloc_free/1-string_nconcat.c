@@ -50,7 +50,7 @@ unsigned int j;
 	for (i = 0; s1[i] != '\0'; i++)
 		s[i] = s1[i];
 
-	for (j = 0; s2[j] != '\0'; j++, i++)
+	for (j = 0; s2[j] != '\0' && j < n; j++, i++)
 		s[j] = s2[j];
 
 s[j + 1] = '\0';
