@@ -9,7 +9,7 @@
 
 int _strlen(char *s)
 {
-	int size, i = 0;
+	int i = 0;
 
 	if (s == NULL)
 		return (0);
@@ -31,7 +31,8 @@ int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
-	int i, j, o, k = 0;
+	int i, k = 0;
+	unsigned int j;
 	int ko;
 
 	s = malloc(_strlen(s1) + n + 1);
