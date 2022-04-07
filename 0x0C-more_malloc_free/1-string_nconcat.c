@@ -30,44 +30,30 @@ unsigned int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s;
-	int i, k = 0;
-	unsigned int j;
-	int ko;
+char *s;
+int i;
+unsigned int j;
 
-	s = malloc(_strlen(s1) + n + 1);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	if (n < _strlen(s2))
+		s = malloc(_strlen(s1) + n * sizeof(char) + 1);
+	else
+		s = malloc(_strlen(s1) + _strlen(s2) + 1);
 
 	if (s == 0)
 		return (NULL);
 
-	if (n >= _strlen(s2))
-	{
-		for (i = 0; s1[i] != '\0'; i++)
-		{
-			ko = i;
-			s[i] = s1[i];
-		}
-
-		for (j = ko + 1; s2[i] != '\0'; j++)
-		{
-		s[j] = s2[k];
-		k++;
-	}
-
-		s[j + 1] = '\0';
-	}
-	else
-	{
 	for (i = 0; s1[i] != '\0'; i++)
-	{ ko = i;
 		s[i] = s1[i];
-	}
-	for (j = ko + 1; j < (_strlen(s1) + n + 1); j++)
-	{
-		s[j] = s2[k];
-		k++;
-	}
-	s[j + 1] = '\0';
-	}
-	return (s);
+
+	for (j = 0; s2[j] != '\0'; j++, i++)
+		s[j] = s2[j];
+
+s[j + 1] = '\0';
+
+return (s);
 }
