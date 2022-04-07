@@ -51,9 +51,9 @@ unsigned int j;
 		s[i] = s1[i];
 
 	for (j = 0; s2[j] != '\0' && j < n; j++, i++)
-		s[j] = s2[j];
+		s[i] = s2[j];
 
-s[j + 1] = '\0';
+s[i + 1] = '\0';
 
 return (s);
 }
