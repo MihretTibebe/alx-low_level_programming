@@ -7,9 +7,9 @@
  *  Return: int
  */
 
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int i = 0;
+	unsigned int i = 0;
 
 	if (s == NULL)
 		return (0);
@@ -40,9 +40,27 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s == 0)
 		return (NULL);
 
-	for (i = 0; s1[i] != '\0'; i++)
+	if (n >= _strlen(s2))
 	{
-		ko = i;
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+			ko = i;
+			s[i] = s1[i];
+		}
+
+		for (j = ko + 1; s2[i] != '\0'; j++)
+		{
+	        s[j] = s2[k];
+	        k++;
+	    }
+
+		s[j + 1] = '\0';
+	}
+
+	else
+	{
+	for (i = 0; s1[i] != '\0'; i++)
+	{ ko = i;
 		s[i] = s1[i];
 	}
 
@@ -53,6 +71,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	s[j + 1] = '\0';
-
+	}
 	return (s);
 }
