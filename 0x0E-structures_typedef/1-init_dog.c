@@ -20,7 +20,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	else
 	{
 		d->name = NULL;
-		d->age = NULL;
+		d->age = 0;
 		d->owner = NULL;
 	}
 }
