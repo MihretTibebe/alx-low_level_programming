@@ -1,0 +1,1 @@
+Exersice: structures and typedef
