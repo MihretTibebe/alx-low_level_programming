@@ -8,7 +8,7 @@
  * @array : integer array
  * @size : integer
  * @cmp : function pointer
- * @Return: int
+ * Return: int
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
