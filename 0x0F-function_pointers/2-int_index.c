@@ -3,12 +3,12 @@
 #include "function_pointers.h"
 
 /**
- * @brief int_index - searches for an integer
+ * int_index - searches for an integer
  *
- * @param array
- * @param size
- * @param cmp
- * @return int
+ * @array : integer array
+ * @size : integer
+ * @cmp : function pointer
+ * @Return: int
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -17,7 +17,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	if (size <= 0)
 		return (-1);
 
-	if (array == NULL || cmp == NULL)
+	if (array == NULL || *cmp == NULL)
 		exit(1);
 
 	for (i = 0; i < size; i++)
