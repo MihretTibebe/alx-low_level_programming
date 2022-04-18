@@ -1,1 +1,1 @@
-Exercise: variadic functions
+variadic functions
