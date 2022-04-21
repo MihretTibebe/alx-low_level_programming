@@ -1,13 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
-
-typedef struct list_s
-{
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+#include <stdio.h>
 
 /**
  * print_list - |prints all the elements of a list_t list
@@ -17,15 +11,24 @@ typedef struct list_s
  */
 size_t print_list(const list_t *h)
 {
-	int i;
+	const list_t *temp = h;
+	size_t n = 0;
 
-	while (h)
+	while (temp != NULL)
 	{
-		if (h->str == NULL)
-			printf("[%d] %s", 0, "nill");
-		printf("[%d] %s", h->len, h->str);
-			h++;
+		if (temp->str == NULL)
+		{
+			printf("[%d] %s\n", 0, "(nil)");
+		}
+
+		else
+		{
+			printf("[%d] %s\n", temp->len, temp->str != NULL ? temp->str : "(nil)");
+		}
+			temp = temp->next;
+			n++;
 	}
-	
+
+	return (n);
 }
 
